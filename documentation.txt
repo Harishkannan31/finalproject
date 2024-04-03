@@ -1,0 +1,43 @@
+to study:
+typescript
+express
+res.cookie concepts
+async js
+
+
+in errorhandler.ts 
+we are using class (ie oops) object oriented so that using that object we can call class wherever we need to handle error throughout the project
+extends error (here error is like function name )so we can call it anywhere
+
+and here we are using naming convention for file like (user.model.ts) here user is the entity that is 
+it has user related entity and 
+model is the file that has model in it
+
+password is hashed before storing in db by bcrypt
+
+in user.model server sends 2 cookies (refreshtoken and accesstoken)
+access token is expired in 5min
+and refresh token will take long time
+when access token is going to expire then our refresh token automatically generates access token
+so due to repeated changes in access token it is highly secured
+to get new access token by refresh token we will be hitting new api line GET/api/user/refresh
+
+
+user controller and user route is for api work both are inter related
+
+facebook and instagram uses this type of authentication by refreshing access token every 5min
+
+Cloudinary is a cloud-based service that provides end-to-end image and video management solutions. It offers a comprehensive platform for storing, managing, optimizing, and delivering media assets (such as images and videos) to web and mobile applications.
+
+interface IComment extends Document-->here document mentions the mongodb document
+
+mysql-->mongodb
+table-->collection
+row(or)record-->Document
+mysql server-->cluster
+
+            minlength:[6,"Password should contain atleast 6 characters"],
+            select:false,
+    these are validation constraints in mongodb no typescript property
+
+    4.33
