@@ -78,23 +78,25 @@ export const editCourse = CatchAsyncError(async (req: Request, res: Response, ne
 //get course content only for valid user
 // export const getCourseByUser = CatchAsyncError(async(req:Request,res:Response,next:NextFunction)=>{
 //     try{
-//         const userCourseList=req.user?.courses;
+//         const userCourseList=req.body?.courses;
 //         const courseId=req.params.id;
-
+//         console.log("req:",req)
 //         const courseExists=userCourseList?.find(
 //             (course:any)=>course._id.toString()===courseId
 //         );
-//         if(!courseExists){
-//             return next(
-//                 new ErrorHandler("you are not eligible to access this course",404)
-//             )
-//         }
+//         // if(!courseExists){
+//         //     return next(
+//         //         new ErrorHandler("you are not eligible to access this course",404)
+//         //     )
+//         // }
         
-//         const course=CourseModel.findById(courseId);
+//         const course=await CourseModel.findById(courseId);
+//         const content=course?.courseData;
+//         console.log(content)
        
 //         res.status(200).json({
 //             success:true,
-//             course,
+//             content,
 //         })
 //     }
 //     catch(error:any){

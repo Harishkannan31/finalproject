@@ -40,4 +40,6 @@ mysql server-->cluster
             select:false,
     these are validation constraints in mongodb no typescript property
 
-    4.33
+what is the purpose of services folder file:
+In a typical web application architecture following the MVC (Model-View-Controller) pattern, the course.service.ts file would likely contain the business logic related to handling courses. Here's the purpose of such a file:
+Separation of Concerns: 
