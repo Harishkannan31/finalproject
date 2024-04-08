@@ -1,0 +1,23 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+
+.card-wrapper {
+  width: 48%; /* Adjust the width as needed */
+  margin-bottom: 20px;
+  padding: 50px;
+  margin-left: 20px;
+  display: flex;
+}
+.card-body{
+  padding: 30px;
+}
+.coursebutton{
+  margin: 20px;
+}
+button{
+  padding: 20px;
+}
